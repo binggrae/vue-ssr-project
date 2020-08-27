@@ -1,0 +1,25 @@
+$border: #E0E0E0;
+$black: #333333;
+$grey: #828282;
+$primary: #3F84EC;
+$font: "Museo";
+$success: #27AE60;
+$danger: #F2994A;
+$bg: #F8F8F8;
+$fail: #F04658;
+
+:root {
+  --border: #E0E0E0;
+  --black: #333333;
+  --grey: #828282;
+  --primary: #3F84EC;
+  --primary_light: rgba(63, 132, 236, 0.12);
+  --font: "Museo";
+  --success: #27AE60;
+  --success_light: rgba(111, 207, 151, 0.16);
+  --danger: #F2994A;
+  --danger_light: rgba(242, 153, 74, 0.12);
+  --bg: #F8F8F8;
+  --fail: #F04658;
+  --fail_light: rgba(240, 70, 88, 0.16);
+}

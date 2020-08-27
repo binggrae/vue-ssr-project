@@ -1,0 +1,14 @@
+.v-title {
+  font-size: 24px !important;
+  line-height: 28px !important;
+
+  &_large {
+    font-size: 36px !important;
+    line-height: 41px !important;
+  }
+
+  &_huge {
+    font-size: 64px;
+    line-height: 100%;
+  }
+}

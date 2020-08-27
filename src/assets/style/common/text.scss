@@ -1,0 +1,84 @@
+.text {
+  font-size: 14px !important;
+  line-height: 16px !important;
+
+  &_small {
+    font-size: 12px !important;
+    line-height: 14px !important;
+  }
+
+  &_smallest {
+    font-size: 10px !important;
+    line-height: 11px !important;
+  }
+
+  &_large {
+    font-size: 18px !important;
+    line-height: 150% !important;
+  }
+
+  &_middle {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+
+  &-decoration {
+    text-decoration: underline;
+
+    &-none {
+      text-decoration: none;
+    }
+  }
+
+  &_opacity-60 {
+    opacity: 0.6;
+  }
+
+  &_lh-1 {
+    line-height: 20px;
+  }
+
+  &_link {
+    color: $primary !important;
+  }
+
+  &_bold {
+    font-weight: 700 !important;
+  }
+
+  &_regular {
+    font-weight: 400;
+  }
+
+  &_medium {
+    font-weight: 600;
+  }
+
+  &_grey {
+    color: $grey !important;
+  }
+
+  &_black {
+    color: $black !important;
+  }
+
+  &_center {
+    text-align: center;
+  }
+
+  &_white {
+    color: white !important;
+  }
+
+  &_danger {
+    color: $danger !important;
+  }
+
+  &_fail {
+    color: $fail !important;
+  }
+
+  &_success {
+    color: $success !important;
+  }
+}
