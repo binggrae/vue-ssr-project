@@ -2,24 +2,25 @@
   font-size: 14px !important;
   line-height: 16px !important;
 
-  &_small {
-    font-size: 12px !important;
-    line-height: 14px !important;
-  }
-
-  &_smallest {
+  &_xs {
     font-size: 10px !important;
     line-height: 11px !important;
   }
 
-  &_large {
-    font-size: 18px !important;
-    line-height: 150% !important;
+  &_sm {
+    font-size: 12px !important;
+    line-height: 14px !important;
   }
 
-  &_middle {
+  &_md {
     font-size: 16px !important;
     line-height: 20px !important;
+  }
+
+
+  &_lg {
+    font-size: 18px !important;
+    line-height: 150% !important;
   }
 
   &-decoration {
@@ -30,28 +31,16 @@
     }
   }
 
-  &_opacity-60 {
-    opacity: 0.6;
+  &_regular {
+    font-weight: 400 !important;
   }
 
-  &_lh-1 {
-    line-height: 20px;
-  }
-
-  &_link {
-    color: $primary !important;
+  &_medium {
+    font-weight: 600 !important;
   }
 
   &_bold {
     font-weight: 700 !important;
-  }
-
-  &_regular {
-    font-weight: 400;
-  }
-
-  &_medium {
-    font-weight: 600;
   }
 
   &_grey {
@@ -62,10 +51,6 @@
     color: $black !important;
   }
 
-  &_center {
-    text-align: center;
-  }
-
   &_white {
     color: white !important;
   }
@@ -74,8 +59,8 @@
     color: $danger !important;
   }
 
-  &_fail {
-    color: $fail !important;
+  &_error {
+    color: $error !important;
   }
 
   &_success {
