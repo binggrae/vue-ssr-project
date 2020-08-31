@@ -1,20 +1,17 @@
 import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
-import {store} from './store';
-import VueCookies from 'vue-cookies';
 
-import {AxiosWrapper} from "@/assets/api/AxiosWrapper";
-import VueMeta from "vue-meta";
+import {AxiosWrapper} from '@/assets/api/AxiosWrapper';
+import VueMeta from 'vue-meta';
 
-import Bus from "@/utils/common/bus";
-
-import {createRouter} from "@/router";
+import {createRouter} from '@/router';
+import {createStore} from '@/store';
+import {sync} from 'vuex-router-sync'
 
 
 Vue.config.productionTip = false;
 
-Vue.prototype.$bus = Bus;
 Vue.prototype.$http = AxiosWrapper.axios;
 
 Vue.use(VueMeta);
@@ -23,9 +20,6 @@ require('moment/locale/ru');
 Vue.use(require('vue-moment'), {
     moment: require('moment')
 });
-
-Vue.use(VueCookies);
-
 
 
 // const token = localStorage.getItem('token');
@@ -36,6 +30,9 @@ if (token) {
 
 export async function createApp({beforeApp = () => {}, afterApp = () => {}} = {}) {
     const router = createRouter();
+    const store = createStore();
+
+    sync(store, router);
 
     await beforeApp({router});
 
@@ -53,5 +50,5 @@ export async function createApp({beforeApp = () => {}, afterApp = () => {}} = {}
 
     await afterApp(result);
 
-    return result
+    return result;
 }

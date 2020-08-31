@@ -28,7 +28,8 @@
     "vue-the-mask": "^0.11.1",
     "vuetify": "^2.2.11",
     "vuex": "^3.4.0",
-    "vuex-persist": "^2.2.0"
+    "vuex-persist": "^2.2.0",
+    "vuex-router-sync": "^4.2.0"
   },
   "devDependencies": {
     "@akryum/vue-cli-plugin-ssr": "~0.6.0",

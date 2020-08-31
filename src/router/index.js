@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import {store} from "@/store";
 
 Vue.use(Router);
 
@@ -17,6 +16,8 @@ export function createRouter() {
     });
 
     router.beforeEach((to, from, next) => {
+        next();
+        /* TODO ADD AUTH RULES
         if (to.matched.some(record => record.meta.requiresAuth)) {
             if (store.getters['user/isLoggedIn']) {
                 next();
@@ -32,6 +33,8 @@ export function createRouter() {
         } else {
             next();
         }
+        */
+
     });
 
     return router;
